@@ -22,7 +22,6 @@ class testCase(object):
 
 		self.name 			  = name
 		self.testType         = "G2"
-		self.driver_path      = '/home/motare/Downloads/chromedriver_linux64/chromedriver'
 		self.locations_gta    =["Toronto Etobicoke", "Oshawa", "Brampton", "Newmarket", "Burlington", "Mississauga", "Oakville",
 								 "Toronto Downsview", "Toronto Metro East",
 								"Toronto Port Union"]

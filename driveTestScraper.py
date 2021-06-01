@@ -22,17 +22,21 @@ to the crontab file will run the driveTestscraper.py script every 30 minutes.
 
 tc = testCase('myTest')
 
-tc.licenceNumber       = "S23670000432213"
+tc.licenceNumber       = "S23670400432213"
 tc.expiryDate          = "20250207"
-tc.emailAddress        = "email@gmail.com"
+tc.emailAddress        = "your-email@gmail.com"
 tc.testType            = "G2"
 tc.location    		   = ["Toronto Etobicoke", "Brampton", "Newmarket", "Burlington"]
+tc.months              = ['June', 'July']
+
+# options
 tc.write        	   = True   # write available dates into a csv file?
 tc.headless 		   = False	# launch headless chrome driver? 
 tc.verify	 		   = False   # for the first time booking, set to false. for reschedeling set to True.
 tc.sendEmail           = False   # send the available dates to the applicant's email. if True, a cloud email address is needed to send the email. 
 tc.cloundEmailAddress  = "cloud-email@gmail.com"
-tc.months              = ['June', 'July']
+tc.driver_path         = "path\\to\\chrome_driver"
+
 
 tc.bookARoadTest()
 
